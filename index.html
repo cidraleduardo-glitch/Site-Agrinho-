@@ -3,71 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCiclo | Guia de Compostagem</title>
+    <title>Agroforte | Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Eco<span>Ciclo</span></div>
-            <ul>
-                <li><a href="#sobre">O que é?</a></li>
-                <li><a href="#como-fazer">Como Fazer</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Transforme lixo em vida</h1>
-            <p>Aprenda a arte da compostagem doméstica com o nosso guia.</p>
-            <a href="#como-fazer" class="btn">Começar Agora</a>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Agro<span>forte</span></div>
+            <nav class="nav-menu">
+                <ul id="menu-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </header>
 
-    <section id="sobre" class="container">
-        <div class="sobre-content">
-            <div>
-                <h2>O que é Compostagem?</h2>
-                <p>A compostagem é o processo biológico de reciclagem da matéria orgânica. Através dela, restos de alimentos e folhas se transformam em um adubo riquíssimo para suas plantas.</p>
-            </div>
-            <img src="download.png" alt="Ilustração Compostagem" class="img-destaque">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Onde a Tecnologia Floresce com a Natureza</h1>
+            <p>Unindo alta produtividade agrícola com o compromisso inegociável da preservação ambiental.</p>
+            <a href="#sobre" class="btn-gold">Saiba Mais</a>
         </div>
     </section>
 
-    <section id="como-fazer" class="bg-light">
+    <section id="sobre" class="about">
         <div class="container">
-            <h2>Processo de Decomposição</h2>
-            <div class="grid">
+            <h2>Nossa Missão</h2>
+            <p>A Agroforte nasceu da necessidade de alimentar o mundo sem esgotar o amanhã. Nossa missão é liderar a revolução do campo através de práticas regenerativas, garantindo que cada hectare produzido seja um legado de vida para as futuras gerações.</p>
+        </div>
+    </section>
+
+    <section id="pilares" class="pillars">
+        <div class="container">
+            <div class="grid-pillars">
                 <div class="card">
-                    <img src="images.jpeg" alt="Resíduos Orgânicos">
-                    <h3>Matéria Prima</h3>
-                    <p>Tudo começa com a separação correta dos resíduos orgânicos e secos.</p>
+                    <div class="icon">🛰️</div>
+                    <h3>Tecnologia</h3>
+                    <p>Monitoramento via satélite e IA para otimizar o uso de recursos hídricos e solo.</p>
                 </div>
                 <div class="card">
-                    <img src="images (1).jpeg" alt="Processo">
-                    <h3>Transformação</h3>
-                    <p>Microorganismos trabalham para decompor o material naturalmente.</p>
+                    <div class="icon">🌿</div>
+                    <h3>Preservação</h3>
+                    <p>Reflorestamento ativo e proteção de mananciais integrados à área produtiva.</p>
                 </div>
                 <div class="card">
-                    <img src="download.jpeg" alt="Húmus">
-                    <h3>Resultado Final</h3>
-                    <p>O resultado é um composto escuro e cheiroso, ideal para nutrir a terra.</p>
+                    <div class="icon">🚜</div>
+                    <h3>Produtividade</h3>
+                    <p>Maximização de colheitas com eficiência operacional de ponta e baixo impacto.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="galeria" class="container">
-        <h2>Inspiração</h2>
-        <div class="galeria-img">
-            <img src="download (1).jpeg" alt="Jardim com Compostagem">
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <textarea id="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+            <div id="form-feedback"></div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 EcoCiclo - Pratique a Sustentabilidade</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Agroforte. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
